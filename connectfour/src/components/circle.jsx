@@ -9,7 +9,12 @@ class Circle extends React.Component {
           x: 0,
           y: 0
       }
+      this.handleClick = this.handleClick.bind(this)
+  }
 
+  handleClick() {
+    this.setState({ color: 'red'})
+    console.log(this.state.x + ' ' + this.state.y)
   }
 
   render() {
@@ -25,7 +30,7 @@ class Circle extends React.Component {
 
 
     return (
-      <div style={circleStyle}>
+      <div style={circleStyle} onClick={this.handleClick}>
   </div>
     )
   }
