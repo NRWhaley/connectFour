@@ -12,10 +12,11 @@ class Circle extends React.Component {
       this.handleClick = this.handleClick.bind(this)
   }
 
-  handleClick() {
-    this.setState({ color: this.props.turn})
-    console.log(this.state.col + ' ' + this.state.row + ' ' + this.props.turn)
-  }
+handleClick(){
+  this.setState({
+    color: this.props.turn
+  })
+}
 
   render() {
     const circleStyle = {

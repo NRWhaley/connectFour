@@ -5,6 +5,12 @@ import Circle from './circle.jsx'
 
 class Column extends React.Component{
 
+
+
+    handleClick(){
+      console.log('hi')
+    }
+
       render(){
       return (
         <div>
