@@ -13,8 +13,8 @@ class Circle extends React.Component {
   }
 
   handleClick() {
-    this.setState({ color: 'red'})
-    console.log(this.state.col + ' ' + this.state.row)
+    this.setState({ color: this.props.turn})
+    console.log(this.state.col + ' ' + this.state.row + ' ' + this.props.turn)
   }
 
   render() {
