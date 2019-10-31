@@ -5,22 +5,22 @@ class Circle extends React.Component {
   constructor(props){
     super(props);
       this.state = {
-          color: 'blue',
-          x: 0,
-          y: 0
+          color: 'white',
+          col: this.props.col,
+          row: this.props.row
       }
       this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
     this.setState({ color: 'red'})
-    console.log(this.state.x + ' ' + this.state.y)
+    console.log(this.state.col + ' ' + this.state.row)
   }
 
   render() {
     const circleStyle = {
       padding:10,
-      margin:20,
+      margin:15,
       display:"inline-block",
       backgroundColor: this.state.color,
       borderRadius: "50%",
