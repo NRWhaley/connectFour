@@ -6,17 +6,15 @@ class Circle extends React.Component {
     super(props);
       this.state = {
           color: 'white',
-          col: this.props.col,
-          row: this.props.row
+          turn: this.props.turn
       }
-      this.handleClick = this.handleClick.bind(this)
+
   }
 
-handleClick(){
-  this.setState({
-    color: this.props.turn
-  })
-}
+
+
+
+
 
   render() {
     const circleStyle = {
@@ -31,7 +29,7 @@ handleClick(){
 
 
     return (
-      <div style={circleStyle} onClick={this.handleClick}>
+      <div style={circleStyle} >
   </div>
     )
   }

@@ -1,6 +1,8 @@
 import React from 'react';
 import Column from './components/column.jsx'
 
+let turn = 'red'
+
 const headStyle = {
   display: 'flex',
   flexDirection: 'column',
@@ -25,8 +27,23 @@ class App extends React.Component {
       turn: 'red'
     }
 
+    this.boardClick = this.boardClick.bind(this)
 
   }
+
+  boardClick() {
+    if(this.state.turn === 'red'){
+      this.setState({
+        turn: 'blue'
+      })
+    } else {
+      this.setState({
+        turn: 'red'
+      })
+    }
+  }
+
+
   render() {
 
   return (
