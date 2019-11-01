@@ -7,13 +7,11 @@ class Column extends React.Component{
 
 
 
-    handleClick(){
-      console.log('hi')
-    }
+
 
       render(){
       return (
-        <div>
+        <div align="center">
         <div>
           <Circle col={0} row={this.props.row} turn={this.props.turn}/>
         </div>
@@ -32,6 +30,7 @@ class Column extends React.Component{
         <div>
           <Circle col={5} row={this.props.row} turn={this.props.turn}/>
         </div>
+        <button onClick={this.handleClick}>Place</button>
         </div>
 
       )}

@@ -5,8 +5,8 @@ class Circle extends React.Component {
   constructor(props){
     super(props);
       this.state = {
-          color: 'white',
-          turn: this.props.turn
+          color: this.props.color || 'white',
+
       }
 
   }

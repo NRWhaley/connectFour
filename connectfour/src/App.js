@@ -1,5 +1,6 @@
 import React from 'react';
 import Column from './components/column.jsx'
+import Game from './components/game.jsx'
 
 let turn = 'red'
 
@@ -36,10 +37,12 @@ class App extends React.Component {
       this.setState({
         turn: 'blue'
       })
+      console.log('blue')
     } else {
       this.setState({
         turn: 'red'
       })
+      console.log('red')
     }
   }
 
@@ -48,8 +51,7 @@ class App extends React.Component {
 
   return (
     <div className='Head' style={headStyle}>
-      Instructions: Click the column to place a token. <br/>
-      Turn:
+      <Game />
 
     <div className="App" style={boardStyle}>
       <div>
